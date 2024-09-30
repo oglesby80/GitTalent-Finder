@@ -65,7 +65,7 @@ const SavedCandidates: React.FC = () => {
     </div>
   );
 };
-length > 0 ? (
+
 export default SavedCandidates;
 
 
