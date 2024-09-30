@@ -13,6 +13,6 @@ const ErrorPage: React.FC = () => {
     </section>
   );
 };
-
+Location: src/pages/ErrorPage.tsx
 export default ErrorPage;
 
