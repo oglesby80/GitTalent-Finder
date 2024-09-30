@@ -1,0 +1,285 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Root Styles */
+:root {
+  font-family: 'Inter Tight', system-ui, Aver, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Anchor Tags */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/* Body Styles */
+body {
+  background: linear-gradient(
+    180deg,
+    #001f3f 0%,
+    #020d36 50%,
+    #000814 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 5em; /* Prominent font size */
+  font-weight: 900; /* Extra bold for emphasis */
+  line-height: 1.2; /* Tighter line height */
+  text-align: center; /* Center the text */
+  color: #ffffff; /* White color for contrast */
+  margin-top: 50px; /* Add more space above */
+  margin-bottom: 20px; /* Add space below */
+  letter-spacing: 1px; /* Slight letter spacing */
+}
+
+/* Buttons */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Main Container */
+main {
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1em 2em;
+  width: 100%;
+  background-color: #001f3f; /* Dark Blue */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em; /* Larger font size */
+  margin-right: 20px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Active Link Styling */
+.active {
+  font-weight: 700;
+}
+
+/* Table Styling */
+.table {
+  width: 80vw;
+  table-layout: fixed;
+}
+
+.saved-candidates-container {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+}
+
+/* Candidates Table */
+.candidates-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: #1b1b3a; /* Dark background */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.candidates-table th,
+.candidates-table td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #444;
+}
+
+.candidates-table th {
+  background-color: #000;
+  color: #fff;
+}
+
+.candidates-table tbody tr:nth-child(odd) {
+  background-color: #333; /* Darker for alternating rows */
+}
+
+.candidates-table td img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+/* Reject Button Styling */
+.reject-button {
+  width: 50px;
+  height: 50px;
+  background-color: #ff4136; /* Red button */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.reject-button:hover {
+  transform: scale(1.1); /* Grow on hover */
+}
+
+/* Container for Candidate Search */
+.candidate-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+}
+
+/* Candidate Card Styling */
+.candidate-card {
+  background-color: #222;
+  padding: 40px; /* Increase padding */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Increase shadow */
+  text-align: center;
+  width: 400px; /* Increased width */
+  margin-top: 40px; /* More margin at the top */
+}
+
+/* Candidate Image Styling */
+.candidate-image {
+  width: 200px; /* Larger avatar */
+  height: 200px; /* Same ratio */
+  border-radius: 50%; /* Fully rounded */
+  margin-bottom: 20px;
+}
+
+/* Company and Bio Styling */
+.candidate-company,
+.candidate-bio {
+  margin-bottom: 20px; /* Add spacing */
+  font-size: 1.2em; /* Larger font size */
+}
+
+/* Action Buttons Container */
+.action-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Skip and Save Buttons */
+.skip-button,
+.save-button {
+  width: 60px; /* Larger buttons */
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  font-size: 28px; /* Larger icon size */
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.skip-button {
+  background-color: #ff4136; /* Red for skipping */
+}
+
+.save-button {
+  background-color: #2ecc40; /* Green for saving */
+}
+
+.skip-button:hover,
+.save-button:hover {
+  transform: scale(1.15); /* Hover effect */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .candidates-table {
+    width: 95%;
+  }
+
+  .candidate-card {
+    width: 90%;
+  }
+
+  .candidate-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
