@@ -64,7 +64,7 @@ const CandidateSearch: React.FC = () => {
     </div>
   );
 };
-
+<L>Candiate</L>
 export default CandidateSearch;
 
 
