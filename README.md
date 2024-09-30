@@ -44,7 +44,7 @@ Copy code
 npm run dev
 Open in Browser:
 
-Visit http://localhost:5173 to view the app.
+Visit http://localhost:5183/candidate-search to view the app.
 File Structure
 src/: Contains all the source code.
 components/: Reusable components like Nav for navigation.
