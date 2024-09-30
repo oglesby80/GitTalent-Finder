@@ -1,5 +1,4 @@
 
-Sure! Here's a detailed description for your README.md file that explains your project clearly:
 
 Candidate Search and Save Application
 This project is a React-based web application for searching GitHub users and saving potential candidates. It provides two main features:
